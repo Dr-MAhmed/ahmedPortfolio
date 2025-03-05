@@ -1,31 +1,31 @@
-"use client"
+"use client";
 
-import { useEffect, useRef } from "react"
-import { gsap } from "gsap"
-import Image from "next/image"
-import Link from "next/link"
-import { useParams, useRouter } from "next/navigation"
-import { ArrowLeft, ExternalLink, Github } from "lucide-react"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import Image from "next/image";
+import Link from "next/link";
+import { useParams, useRouter } from "next/navigation";
+import { ArrowLeft, ExternalLink, Github } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 export default function ProjectDetail() {
-  const router = useRouter()
-  const { id } = useParams()
-  const projectId = Number.parseInt(id as string)
+  const router = useRouter();
+  const { id } = useParams();
+  const projectId = Number.parseInt(id as string);
 
-  const headerRef = useRef(null)
-  const contentRef = useRef(null)
-  const imageRef = useRef(null)
-  const metaRef = useRef(null)
+  const headerRef = useRef(null);
+  const contentRef = useRef(null);
+  const imageRef = useRef(null);
+  const metaRef = useRef(null);
 
   useEffect(() => {
-    const tl = gsap.timeline()
+    const tl = gsap.timeline();
 
     tl.from(headerRef.current, {
       y: 30,
-      opacity: 0,
+      opacity: 10,
       duration: 0.6,
       ease: "power3.out",
     })
@@ -33,33 +33,33 @@ export default function ProjectDetail() {
         imageRef.current,
         {
           y: 30,
-          opacity: 0,
+          opacity: 10,
           duration: 0.6,
           ease: "power3.out",
         },
-        "-=0.3",
+        "-=0.3"
       )
       .from(
         contentRef.current,
         {
           y: 30,
-          opacity: 0,
+          opacity: 10,
           duration: 0.6,
           ease: "power3.out",
         },
-        "-=0.3",
+        "-=0.3"
       )
       .from(
         metaRef.current,
         {
           y: 30,
-          opacity: 0,
+          opacity: 10,
           duration: 0.6,
           ease: "power3.out",
         },
-        "-=0.3",
-      )
-  }, [])
+        "-=0.3"
+      );
+  }, []);
 
   // Project data (in a real app, this would come from an API or database)
   const projects = [
@@ -70,7 +70,7 @@ export default function ProjectDetail() {
         "A full-featured e-commerce platform with product management, cart functionality, and payment processing. Built with a focus on performance and user experience.",
       longDescription:
         "This comprehensive e-commerce solution features a responsive design, advanced filtering, real-time inventory updates, and seamless payment integration. The admin dashboard provides detailed analytics and inventory management tools.",
-      image: "/placeholder.svg",
+      image: "/urban1.png",
       tags: ["React", "Next.js", "Stripe", "Tailwind CSS"],
       link: "#",
       github: "#",
@@ -96,11 +96,7 @@ export default function ProjectDetail() {
         author: "Sarah Johnson",
         role: "Marketing Director",
       },
-      gallery: [
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg",
-      ],
+      gallery: ["/urban2.png", "/urban3.png", "/urban4.png"],
     },
     {
       id: 2,
@@ -109,7 +105,7 @@ export default function ProjectDetail() {
         "A responsive portfolio website with dark mode, animations, and contact form. Designed to showcase creative work with a focus on visual impact.",
       longDescription:
         "This portfolio site features smooth page transitions, interactive project galleries, and a custom-built content management system. The responsive design ensures a consistent experience across all devices.",
-      image: "/placeholder.svg",
+      image: "/portfolioimg.png",
       tags: ["React", "GSAP", "Tailwind CSS", "Framer Motion"],
       link: "#",
       github: "#",
@@ -136,11 +132,7 @@ export default function ProjectDetail() {
         author: "Michael Chen",
         role: "Photographer",
       },
-      gallery: [
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg",
-      ],
+      gallery: ["/port2.png", "/port3.png", "/port4.png"],
     },
     {
       id: 3,
@@ -149,7 +141,7 @@ export default function ProjectDetail() {
         "A collaborative task management application with real-time updates and team features. Helps teams stay organized and track progress efficiently.",
       longDescription:
         "This task management solution includes features like drag-and-drop task organization, time tracking, team collaboration tools, and customizable workflows. The real-time updates ensure all team members stay in sync.",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/ecklee grill.png",
       tags: ["React", "Firebase", "TypeScript", "Redux"],
       link: "#",
       github: "#",
@@ -175,11 +167,7 @@ export default function ProjectDetail() {
         author: "Alex Rivera",
         role: "Product Manager",
       },
-      gallery: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800",
-      ],
+      gallery: ["/grill2.png", "/grill3.png", "/grill4.png"],
     },
     {
       id: 4,
@@ -377,25 +365,31 @@ export default function ProjectDetail() {
         "/placeholder.svg?height=600&width=800",
       ],
     },
-  ]
+  ];
 
-  const project = projects.find((p) => p.id === projectId)
+  const project = projects.find((p) => p.id === projectId);
 
   if (!project) {
     return (
       <div className="container mx-auto px-4 py-12 text-center">
         <h1 className="text-3xl font-bold mb-4">Project Not Found</h1>
-        <p className="mb-8">The project you're looking for doesn't exist or has been removed.</p>
+        <p className="mb-8">
+          The project you're looking for doesn't exist or has been removed.
+        </p>
         <Button asChild>
           <Link href="/projects">Back to Projects</Link>
         </Button>
       </div>
-    )
+    );
   }
 
   return (
     <div className="container mx-auto px-4 py-12">
-      <Button variant="ghost" className="mb-8 group" onClick={() => router.push("/projects")}>
+      <Button
+        variant="ghost"
+        className="mb-8 group"
+        onClick={() => router.push("/projects")}
+      >
         <ArrowLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />
         Back to Projects
       </Button>
@@ -407,7 +401,12 @@ export default function ProjectDetail() {
 
       <div ref={imageRef} className="mb-12">
         <div className="relative h-[300px] md:h-[500px] rounded-xl overflow-hidden">
-          <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
+          <Image
+            src={project.image || "/placeholder.svg"}
+            alt={project.title}
+            fill
+            className="object-cover"
+          />
         </div>
       </div>
 
@@ -442,9 +441,13 @@ export default function ProjectDetail() {
 
           {project.testimonial && (
             <div className="bg-purple-50 dark:bg-purple-900/10 p-6 rounded-lg border border-purple-100 dark:border-purple-800">
-              <blockquote className="text-muted-foreground italic mb-4">"{project.testimonial.quote}"</blockquote>
+              <blockquote className="text-muted-foreground italic mb-4">
+                "{project.testimonial.quote}"
+              </blockquote>
               <div className="font-medium">{project.testimonial.author}</div>
-              <div className="text-sm text-muted-foreground">{project.testimonial.role}</div>
+              <div className="text-sm text-muted-foreground">
+                {project.testimonial.role}
+              </div>
             </div>
           )}
 
@@ -452,7 +455,10 @@ export default function ProjectDetail() {
             <h2 className="text-2xl font-bold mb-4">Gallery</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {project.gallery.map((image, index) => (
-                <div key={index} className="relative h-48 rounded-lg overflow-hidden">
+                <div
+                  key={index}
+                  className="relative h-48 rounded-lg overflow-hidden"
+                >
                   <Image
                     src={image || "/placeholder.svg"}
                     alt={`${project.title} gallery image ${index + 1}`}
@@ -478,19 +484,29 @@ export default function ProjectDetail() {
                 <div className="font-medium">{project.date}</div>
               </div>
               <div>
-                <div className="text-sm text-muted-foreground mb-1">Duration</div>
+                <div className="text-sm text-muted-foreground mb-1">
+                  Duration
+                </div>
                 <div className="font-medium">{project.duration}</div>
               </div>
               <div>
-                <div className="text-sm text-muted-foreground mb-1">Category</div>
+                <div className="text-sm text-muted-foreground mb-1">
+                  Category
+                </div>
                 <div className="font-medium capitalize">{project.category}</div>
               </div>
               <Separator />
               <div>
-                <div className="text-sm text-muted-foreground mb-2">Technologies</div>
+                <div className="text-sm text-muted-foreground mb-2">
+                  Technologies
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, index) => (
-                    <Badge key={index} variant="outline" className="bg-purple-50 dark:bg-purple-900/20">
+                    <Badge
+                      key={index}
+                      variant="outline"
+                      className="bg-purple-50 dark:bg-purple-900/20"
+                    >
                       {tag}
                     </Badge>
                   ))}
@@ -500,14 +516,23 @@ export default function ProjectDetail() {
           </div>
 
           <div className="space-y-4">
-            <Button asChild className="w-full bg-purple-600 hover:bg-purple-700 text-white">
-              <Link href={project.link} className="flex items-center justify-center">
+            <Button
+              asChild
+              className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+            >
+              <Link
+                href={project.link}
+                className="flex items-center justify-center"
+              >
                 <ExternalLink className="mr-2 h-4 w-4" />
                 View Live Project
               </Link>
             </Button>
             <Button asChild variant="outline" className="w-full">
-              <Link href={project.github} className="flex items-center justify-center">
+              <Link
+                href={project.github}
+                className="flex items-center justify-center"
+              >
                 <Github className="mr-2 h-4 w-4" />
                 View Source Code
               </Link>
@@ -517,7 +542,8 @@ export default function ProjectDetail() {
           <div className="bg-card rounded-lg border p-6">
             <h3 className="text-lg font-bold mb-4">Need a similar project?</h3>
             <p className="text-muted-foreground mb-4">
-              I'm available for freelance projects. Let's discuss how I can help bring your ideas to life.
+              I'm available for freelance projects. Let's discuss how I can help
+              bring your ideas to life.
             </p>
             <Button asChild className="w-full">
               <Link href="/contact">Contact Me</Link>
@@ -526,5 +552,5 @@ export default function ProjectDetail() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -80,9 +80,9 @@ export default function Projects() {
         "A full-featured e-commerce platform with product management, cart functionality, and payment processing. Built with a focus on performance and user experience.",
       longDescription:
         "This comprehensive e-commerce solution features a responsive design, advanced filtering, real-time inventory updates, and seamless payment integration. The admin dashboard provides detailed analytics and inventory management tools.",
-      image: "/placeholder.svg",
+      image: "/urban1.png",
       tags: ["React", "Next.js", "Stripe", "Tailwind CSS"],
-      link: "#",
+      link: "https://urbanemporium.vercel.app/",
       github: "#",
       client: "Fashion Retailer",
       date: "January 2023",
@@ -95,9 +95,9 @@ export default function Projects() {
         "A responsive portfolio website with dark mode, animations, and contact form. Designed to showcase creative work with a focus on visual impact.",
       longDescription:
         "This portfolio site features smooth page transitions, interactive project galleries, and a custom-built content management system. The responsive design ensures a consistent experience across all devices.",
-      image: "/placeholder.svg",
+      image: "/portfolioimg.png",
       tags: ["React", "GSAP", "Tailwind CSS", "Framer Motion"],
-      link: "#",
+      link: "https://portm-html.vercel.app/home-v2.html",
       github: "#",
       client: "Photographer",
       date: "March 2023",
@@ -106,49 +106,50 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "Task Management App",
+      title: "Stock Management App",
       description:
-        "A collaborative task management application with real-time updates and team features. Helps teams stay organized and track progress efficiently.",
+        "A collaborative stock management application with real-time updates and team features. Helps teams stay organized and track progress efficiently.",
       longDescription:
-        "This task management solution includes features like drag-and-drop task organization, time tracking, team collaboration tools, and customizable workflows. The real-time updates ensure all team members stay in sync.",
-      image: "/placeholder.svg",
+        "This stock management solution includes features like drag-and-drop task organization, time tracking, team collaboration tools, and customizable workflows. The real-time updates ensure all team members stay in sync.",
+      image: "/ecklee grill.png",
       tags: ["React", "Firebase", "TypeScript", "Redux"],
-      link: "#",
+      link: "https://ecklee.web.app/grill",
       github: "#",
-      client: "Tech Startup",
-      date: "May 2023",
+      client: "Ecklee Group",
+      date: "Jan 2025",
       category: "app",
     },
     {
       id: 4,
-      title: "Travel Blog",
+      title: "Ahmed Homeopathy Clinic",
       description:
-        "A travel blog with content management system and interactive maps. Designed to showcase travel experiences with rich media content.",
+        "A professional website for Ahmed Homeopathy Clinic, providing information on treatments, appointments, and patient testimonials.",
       longDescription:
-        "This travel blog features interactive maps showing travel routes, a photo gallery with lightbox functionality, and a custom CMS for easy content updates. The blog also includes social sharing integration and comment functionality.",
-      image: "/placeholder.svg",
-      tags: ["Next.js", "CMS", "Mapbox", "MongoDB"],
-      link: "#",
-      github: "#",
-      client: "Travel Blogger",
-      date: "July 2023",
-      category: "web",
-    },
-    {
-      id: 5,
-      title: "Fitness Tracking Mobile App",
-      description:
-        "A mobile application for tracking workouts, nutrition, and fitness goals. Helps users maintain a healthy lifestyle with personalized recommendations.",
-      longDescription:
-        "This fitness app includes workout tracking with visual progress charts, nutrition logging with barcode scanning, goal setting with reminders, and integration with popular fitness wearables. The app provides personalized recommendations based on user activity.",
-      image: "/placeholder.svg",
-      tags: ["React Native", "Firebase", "Redux", "Health API"],
-      link: "#",
-      github: "#",
-      client: "Fitness Company",
-      date: "September 2023",
-      category: "app",
-    },
+        "Ahmed Homeopathy Clinic's website offers a seamless user experience with a modern design. It includes an appointment booking system, detailed treatment pages, patient testimonials, and an informative blog. The website is fully responsive and optimized for SEO.",
+      image: "/ahmedhc2.png",
+      tags: ["Next.js", "Tailwind CSS", "MongoDB", "Cloudinary"],
+      link: "https://ahmedhc.vercel.app",
+      github: "https://github.com/Dr-MAhmed/ahmedhc",
+      client: "Ahmed Homeopathy Clinic",
+      date: "2024",
+      category: "Healthcare Website"
+},
+
+    // {
+    //   id: 5,
+    //   title: "Fitness Tracking Mobile App",
+    //   description:
+    //     "A mobile application for tracking workouts, nutrition, and fitness goals. Helps users maintain a healthy lifestyle with personalized recommendations.",
+    //   longDescription:
+    //     "This fitness app includes workout tracking with visual progress charts, nutrition logging with barcode scanning, goal setting with reminders, and integration with popular fitness wearables. The app provides personalized recommendations based on user activity.",
+    //   image: "/placeholder.svg",
+    //   tags: ["React Native", "Firebase", "Redux", "Health API"],
+    //   link: "#",
+    //   github: "#",
+    //   client: "Fitness Company",
+    //   date: "September 2023",
+    //   category: "app",
+    // },
     {
       id: 6,
       title: "Restaurant Ordering System",
@@ -156,45 +157,46 @@ export default function Projects() {
         "A digital ordering system for restaurants with menu management, order tracking, and payment processing. Streamlines the ordering process for both customers and staff.",
       longDescription:
         "This restaurant system includes digital menu management with real-time updates, table reservation system, kitchen order display, and integrated payment processing. The system also provides analytics on popular dishes and peak hours.",
-      image: "/placeholder.svg",
+      image: "/eckleemarket.png",
       tags: ["Vue.js", "Node.js", "PostgreSQL", "Socket.io"],
-      link: "#",
+      link: "https://ecklee.web.app/market",
       github: "#",
       client: "Restaurant Chain",
       date: "November 2023",
       category: "web",
       featured: true,
     },
+    // {
+    //   id: 7,
+    //   title: "3D Product Configurator",
+    //   description:
+    //     "An interactive 3D product configurator allowing customers to customize products before purchase. Enhances the shopping experience with real-time visualization.",
+    //   longDescription:
+    //     "This 3D configurator allows customers to customize products with different colors, materials, and components. The real-time rendering provides immediate visual feedback, and the configuration can be saved or shared. The tool integrates directly with the e-commerce checkout process.",
+    //   image: "/placeholder.svg",
+    //   tags: ["Three.js", "WebGL", "React", "Node.js"],
+    //   link: "#",
+    //   github: "#",
+    //   client: "Furniture Manufacturer",
+    //   date: "December 2023",
+    //   category: "3d",
+    // },
     {
-      id: 7,
-      title: "3D Product Configurator",
+      id: 5,
+      title: "IT Skills Hub",
       description:
-        "An interactive 3D product configurator allowing customers to customize products before purchase. Enhances the shopping experience with real-time visualization.",
+        "An educational platform offering courses and resources for IT and programming skills development.",
       longDescription:
-        "This 3D configurator allows customers to customize products with different colors, materials, and components. The real-time rendering provides immediate visual feedback, and the configuration can be saved or shared. The tool integrates directly with the e-commerce checkout process.",
-      image: "/placeholder.svg",
-      tags: ["Three.js", "WebGL", "React", "Node.js"],
-      link: "#",
+        "IT Skills Hub provides a user-friendly platform with various IT and programming courses. It features an interactive learning experience, course categorization, and a responsive design for easy access across devices. The platform is optimized for performance and SEO.",
+      image: "/itskill.png",
+      tags: ["React", "Tailwind CSS", "Firebase", "Netlify"],
+      link: "https://itskillshub.netlify.app/",
       github: "#",
-      client: "Furniture Manufacturer",
-      date: "December 2023",
-      category: "3d",
-    },
-    {
-      id: 8,
-      title: "Educational Platform",
-      description:
-        "An online learning platform with course management, progress tracking, and interactive quizzes. Designed to make learning engaging and accessible.",
-      longDescription:
-        "This educational platform features video lessons with transcripts, interactive quizzes with immediate feedback, progress tracking with certificates, and a discussion forum for student collaboration. The platform includes an instructor dashboard for course management and student performance analytics.",
-      image: "/placeholder.svg?height=600&width=800",
-      tags: ["React", "Express", "MongoDB", "AWS"],
-      link: "#",
-      github: "#",
-      client: "Educational Institution",
-      date: "February 2024",
-      category: "web",
-    },
+      client: "IT Skills Hub",
+      date: "2024",
+      category: "Educational Website"
+}
+
   ];
 
   const featuredProjects = projects.filter((project) => project.featured);
@@ -264,7 +266,7 @@ export default function Projects() {
                       variant="outline"
                       className="border-white text-white hover:bg-white/20"
                     >
-                      <Link href={project.github} className="flex items-center">
+                      <Link href={project.github} className="flex items-center text-purple-500">
                         <Github className="mr-2 h-4 w-4" />
                         Code
                       </Link>

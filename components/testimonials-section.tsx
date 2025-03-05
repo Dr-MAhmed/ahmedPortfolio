@@ -30,8 +30,8 @@ export default function TestimonialsSection() {
       author: "Sarah Johnson",
       position: "Marketing Director",
       company: "Fashion Retailer",
-      avatar: "/placeholder.svg?height=100&width=100",
-      logo: "/placeholder.svg?height=60&width=120",
+      avatar: "/client2.jpg",
+      logo: "/comp1.svg",
       rating: 5,
     },
     {
@@ -41,8 +41,8 @@ export default function TestimonialsSection() {
       author: "Michael Chen",
       position: "Photographer",
       company: "Visual Arts Studio",
-      avatar: "/placeholder.svg?height=100&width=100",
-      logo: "/placeholder.svg?height=60&width=120",
+      avatar: "/client1.jpg",
+      logo: "/comp2.svg",
       rating: 5,
     },
     {
@@ -52,8 +52,8 @@ export default function TestimonialsSection() {
       author: "Alex Rivera",
       position: "Product Manager",
       company: "Tech Startup",
-      avatar: "/placeholder.svg?height=100&width=100",
-      logo: "/placeholder.svg?height=60&width=120",
+      avatar: "/client3.jpg",
+      logo: "/comp3.svg",
       rating: 5,
     },
   ]

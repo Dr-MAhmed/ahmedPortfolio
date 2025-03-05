@@ -60,10 +60,10 @@ export default function About() {
     "Tailwind CSS",
     "GSAP",
     "Node.js",
-    "UI/UX Design",
-    "Figma",
+    "Express.js",
+    "MongoDB",
     "Responsive Design",
-    "CSS/SCSS",
+    "Firebase",
     "Git",
   ]
 
@@ -75,13 +75,13 @@ export default function About() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
         <div ref={imageRef} className="relative h-[400px] rounded-lg overflow-hidden">
-          <Image src="/placeholder.svg?height=800&width=600" alt="Profile" fill className="object-cover" />
+          <Image src="/aboutimg.jpg" alt="Profile" fill className="object-cover" />
         </div>
         <div ref={contentRef} className="space-y-6">
-          <h2 className="text-2xl font-bold">Hi, I'm [Your Name]</h2>
+          <h2 className="text-2xl font-bold">Hi, I'm Muhammad Ahmed</h2>
           <p className="text-muted-foreground">
-            I'm a passionate developer and designer with over 5 years of experience creating beautiful, functional
-            websites and applications. My journey in tech began when I built my first website at 15, and I've been
+            I'm a passionate developer and designer with over +2 years of experience creating beautiful, functional
+            websites and applications. My journey in tech began when I built my first website at 20, and I've been
             hooked ever since.
           </p>
           <p className="text-muted-foreground">

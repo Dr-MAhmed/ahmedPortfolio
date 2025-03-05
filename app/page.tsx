@@ -118,9 +118,10 @@ export default function Home() {
       </div>
 
       {/* Centered Testimonials Sections */}
+       
       <div className="mt-32 mb-12 flex flex-col items-center">
         {/* Testimonials Marquee */}
-        <div className="w-full max-w-6xl mx-auto mb-32">
+        {/* <div className="w-full max-w-6xl mx-auto mb-32">
           <h2 ref={testimonialsHeadingRef1} className="text-2xl md:text-3xl font-bold mb-12 text-center relative">
             <span className="relative inline-block">
               What <span className="text-purple-600 dark:text-purple-400">Clients</span> Say
@@ -128,7 +129,7 @@ export default function Home() {
             </span>
           </h2>
           <TestimonialsMarquee />
-        </div>
+        </div> */}
 
         {/* Featured Testimonials Section */}
         <div className="w-full max-w-6xl mx-auto">
